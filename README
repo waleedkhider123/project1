@@ -7,7 +7,8 @@ The files in this repository were used to configure the network depicted below.
 - https://github.com/waleedkhider123/project1
 
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _playbook file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. 
+Alternatively, select portions of the _playbook file may be used to install only certain pieces of it, such as Filebeat.
 
 
   -  https://github.com/waleedkhider123/project1
@@ -27,7 +28,8 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly available and reliable, in addition to restricting entry to the network.
-- _ By using jump box, we will prevent VM’s expose to the public and limit the entry point via Remote Desktop Protocol (RDP) on premise network. Also, we can restrict the IP addresses to communicate with the Jump box.
+- _ By using jump box, we will prevent VM’s expose to the public and limit the entry point via Remote Desktop Protocol (RDP) on premise network. 
+Also, we can restrict the IP addresses to communicate with the Jump box.
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the specific files and system track.
 - Filebeat monitors, collects log events and files or location and forward them to Elasticsearch or Logstash for indexing.
 
@@ -108,8 +110,10 @@ SSH into the control node and follow the steps below:
 - Update the inventory file to include the IP address of the ELK VM
 - Run the playbook, and navigate to Ansible container to check that the installation worked as expected by running: docker ps.
  
-- _ playbook is the file that installs Docker and configures the container. Through a playbook, you can designate specific roles to some of the hosts and other roles to other hosts. we copied this file to the ansible container- 
-_we updated the Ansible's inventory to include the IP address of the ELK VM 10.1.0.4 by editing  # /etc/ansible/hosts, add a group called [elk] and specify the IP address of the ELK VM 10.1.0.4
+- _ playbook is the file that installs Docker and configures the container. Through a playbook, you can designate specific roles to some of the hosts 
+and other roles to other hosts. we copied this file to the ansible container-e updated the Ansible's inventory to include the IP address of the ELK VM 10.1.0.4 
+by editing :
+ # /etc/ansible/hosts, add a group called [elk] and specify the IP address of the ELK VM 10.1.0.4
 
 
 - _Which URL do you navigate to in order to check that the ELK server is running?
@@ -119,7 +123,8 @@ http://[ELK-VM.External.IP]:5601/app/kibana.
 - commands the user will need to run to download the playbook, update the files, etc. 
   - ansible-playbook myplaybook.yml# ansible-playbook myplaybook.yml
   - nano /etc/ansible/hosts
-  - curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat >   /etc/ansible/files/filebeat-config.yml
+  - curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > 
+  /etc/ansible/files/filebeat-config.yml
   - /etc/ansible/files/filebeat-config.yml
   - ansible-playbook filebeat-playbook.yml
   - dpkg -i filebeat-7.4.0-amd64.deb
