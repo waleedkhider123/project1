@@ -111,7 +111,7 @@ http://[ELK-VM.External.IP]:5601/app/kibana.
 - commands the user will need to run to download the playbook, update the files, etc. 
   - ansible-playbook myplaybook.yml# ansible-playbook myplaybook.yml
   - nano /etc/ansible/hosts
-  - curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > 
+   - curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > 
   /etc/ansible/files/filebeat-config.yml
 
 
