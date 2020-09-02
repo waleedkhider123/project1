@@ -3,7 +3,7 @@
 
 The files in this repository were used to configure the network depicted below
 
-[![Images-diagram](https://github.com/waleedkhider123/project1/tree/master/images-diagram)
+https://github.com/waleedkhider123/project1/tree/master/images-diagram
  
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. 
 Alternatively, select portions of the _playbook file may be used to install only certain pieces of it, such as Filebeat.
@@ -113,6 +113,8 @@ http://[ELK-VM.External.IP]:5601/app/kibana.
   - nano /etc/ansible/hosts
   - curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > 
   /etc/ansible/files/filebeat-config.yml
+
+
   - /etc/ansible/files/filebeat-config.yml
   - ansible-playbook filebeat-playbook.yml
   - dpkg -i filebeat-7.4.0-amd64.deb
